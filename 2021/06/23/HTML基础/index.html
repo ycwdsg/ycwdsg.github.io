@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="HTML基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML基础">
+<meta property="og:url" content="http://example.com/2021/06/23/HTML%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="山鬼">
+<meta property="og:description" content="HTML基础">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-23T15:00:23.000Z">
+<meta property="article:modified_time" content="2021-06-24T02:30:21.916Z">
+<meta property="article:author" content="杨从伍">
+<meta property="article:tag" content="HTML">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021/06/23/HTML%E5%9F%BA%E7%A1%80/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>HTML基础 | 山鬼</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">山鬼</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">隔江蔓草斜，犹送东流水</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/23/HTML%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.jpg">
+      <meta itemprop="name" content="杨从伍">
+      <meta itemprop="description" content="新手上路，请多关照">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="山鬼">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          HTML基础
+        </h1>
+
+        <div class="post-meta">
+
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-23 23:00:23" itemprop="dateCreated datePublished" datetime="2021-06-23T23:00:23+08:00">2021-06-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-24 10:30:21" itemprop="dateModified" datetime="2021-06-24T10:30:21+08:00">2021-06-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">前端基础</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.9k</span>
+            </span>
+            <div class="post-description">HTML基础</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><h2 id="一、html基础"><a href="#一、html基础" class="headerlink" title="一、html基础"></a>一、html基础</h2><h4 id="超文本标记语言，用来定义网页结构"><a href="#超文本标记语言，用来定义网页结构" class="headerlink" title="超文本标记语言，用来定义网页结构"></a>超文本标记语言，用来定义网页结构</h4><h4 id="元素：包含开始标签、结束标签、内容、元素（前三者结合为元素）"><a href="#元素：包含开始标签、结束标签、内容、元素（前三者结合为元素）" class="headerlink" title="元素：包含开始标签、结束标签、内容、元素（前三者结合为元素）"></a>元素：包含开始标签、结束标签、内容、元素（前三者结合为元素）</h4><h3 id="1、块级元素和内联元素"><a href="#1、块级元素和内联元素" class="headerlink" title="1、块级元素和内联元素"></a>1、块级元素和内联元素</h3><h4 id="块级元素在页面中以块的形式展现"><a href="#块级元素在页面中以块的形式展现" class="headerlink" title="块级元素在页面中以块的形式展现"></a>块级元素在页面中以块的形式展现</h4><h4 id="内联元素通常出现在块级元素中并环绕文档内容的一小部分"><a href="#内联元素通常出现在块级元素中并环绕文档内容的一小部分" class="headerlink" title="内联元素通常出现在块级元素中并环绕文档内容的一小部分"></a>内联元素通常出现在块级元素中并环绕文档内容的一小部分</h4><h3 id="2、元素的属性"><a href="#2、元素的属性" class="headerlink" title="2、元素的属性"></a>2、元素的属性</h3><h4 id="属性包含元素的额外信息，这些信息不会出现在实际的内容中"><a href="#属性包含元素的额外信息，这些信息不会出现在实际的内容中" class="headerlink" title="属性包含元素的额外信息，这些信息不会出现在实际的内容中"></a>属性包含元素的额外信息，这些信息不会出现在实际的内容中</h4><h4 id="属性值最好加引号，以减少不必要的错误"><a href="#属性值最好加引号，以减少不必要的错误" class="headerlink" title="属性值最好加引号，以减少不必要的错误"></a>属性值最好加引号，以减少不必要的错误</h4><h3 id="3、html文档"><a href="#3、html文档" class="headerlink" title="3、html文档"></a>3、html文档</h3><h4 id="lt-DOCTYPE-type-gt-声明文档类型"><a href="#lt-DOCTYPE-type-gt-声明文档类型" class="headerlink" title="&lt; !DOCTYPE type&gt;声明文档类型"></a>&lt; !DOCTYPE type&gt;声明文档类型</h4><h4 id="lt-html-gt-标签：根元素"><a href="#lt-html-gt-标签：根元素" class="headerlink" title="&lt; html&gt;标签：根元素"></a>&lt; html&gt;标签：根元素</h4><h4 id="lt-meta-charset-“uft-8”-gt-设置文档使用的字符集编码"><a href="#lt-meta-charset-“uft-8”-gt-设置文档使用的字符集编码" class="headerlink" title="&lt; meta charset=“uft-8”&gt;设置文档使用的字符集编码"></a>&lt; meta charset=“uft-8”&gt;设置文档使用的字符集编码</h4><h4 id="lt-title-gt-是一项元数据，用来标记页面内的标题"><a href="#lt-title-gt-是一项元数据，用来标记页面内的标题" class="headerlink" title="&lt;  title&gt;是一项元数据，用来标记页面内的标题"></a>&lt;  title&gt;是一项元数据，用来标记页面内的标题</h4><h4 id="lt-span-gt-没有语义"><a href="#lt-span-gt-没有语义" class="headerlink" title="&lt; span&gt;没有语义"></a>&lt; span&gt;没有语义</h4><h3 id="4、文字处理"><a href="#4、文字处理" class="headerlink" title="4、文字处理"></a>4、文字处理</h3><h4 id="无序列表：-lt-ul-gt-，里面包含-lt-li-gt-，用于标记列表项目顺序无关紧要的列表"><a href="#无序列表：-lt-ul-gt-，里面包含-lt-li-gt-，用于标记列表项目顺序无关紧要的列表" class="headerlink" title="无序列表：&lt; ul&gt;，里面包含&lt; li&gt;，用于标记列表项目顺序无关紧要的列表"></a>无序列表：&lt; ul&gt;，里面包含&lt; li&gt;，用于标记列表项目顺序无关紧要的列表</h4><h4 id="有序列表：-lt-OL-gt-，需要按照项目的顺序列出来"><a href="#有序列表：-lt-OL-gt-，需要按照项目的顺序列出来" class="headerlink" title="有序列表：&lt; OL&gt;，需要按照项目的顺序列出来"></a>有序列表：&lt; OL&gt;，需要按照项目的顺序列出来</h4><h4 id="嵌套列表：ol和ul联合li使用"><a href="#嵌套列表：ol和ul联合li使用" class="headerlink" title="嵌套列表：ol和ul联合li使用"></a>嵌套列表：ol和ul联合li使用</h4><h4 id="重点强调-：-lt-em-gt-标签（斜体强调）和-lt-strong-gt-标签（加粗强调）"><a href="#重点强调-：-lt-em-gt-标签（斜体强调）和-lt-strong-gt-标签（加粗强调）" class="headerlink" title="重点强调 ：&lt; em&gt;标签（斜体强调）和&lt; strong&gt;标签（加粗强调）"></a>重点强调 ：&lt; em&gt;标签（斜体强调）和&lt; strong&gt;标签（加粗强调）</h4><h4 id="lt-b-gt-粗体-lt-i-gt-斜体-lt-u-gt-下划线"><a href="#lt-b-gt-粗体-lt-i-gt-斜体-lt-u-gt-下划线" class="headerlink" title="&lt; b&gt;粗体 &lt; i&gt;斜体 &lt; u&gt;下划线"></a>&lt; b&gt;粗体 &lt; i&gt;斜体 &lt; u&gt;下划线</h4><h3 id="5、超链接"><a href="#5、超链接" class="headerlink" title="5、超链接"></a>5、超链接</h3><h4 id="将文本或其他内容转化为-lt-a-gt-中的链接，给它href属性"><a href="#将文本或其他内容转化为-lt-a-gt-中的链接，给它href属性" class="headerlink" title="将文本或其他内容转化为&lt; a&gt;中的链接，给它href属性"></a>将文本或其他内容转化为&lt; a&gt;中的链接，给它href属性</h4><h3 id="url：绝对url和相对url"><a href="#url：绝对url和相对url" class="headerlink" title="url：绝对url和相对url"></a>url：绝对url和相对url</h3><h4 id="绝对url：指向由其在web上的绝对位置定义的位置，不管url在哪里使用，总是指向确定的位置"><a href="#绝对url：指向由其在web上的绝对位置定义的位置，不管url在哪里使用，总是指向确定的位置" class="headerlink" title="绝对url：指向由其在web上的绝对位置定义的位置，不管url在哪里使用，总是指向确定的位置"></a>绝对url：指向由其在web上的绝对位置定义的位置，不管url在哪里使用，总是指向确定的位置</h4><h4 id="相对url：一个相对url所指向的位置取决于其所在文件的位置"><a href="#相对url：一个相对url所指向的位置取决于其所在文件的位置" class="headerlink" title="相对url：一个相对url所指向的位置取决于其所在文件的位置"></a>相对url：一个相对url所指向的位置取决于其所在文件的位置</h4><h4 id="尽可能选择相对rul（更易检查、效率更高）"><a href="#尽可能选择相对rul（更易检查、效率更高）" class="headerlink" title="尽可能选择相对rul（更易检查、效率更高）"></a>尽可能选择相对rul（更易检查、效率更高）</h4><h3 id="6、引用"><a href="#6、引用" class="headerlink" title="6、引用"></a>6、引用</h3><h4 id="块引用：块级元素从其他地方被引用，使用-lt-blockquote-gt-元素包裹起来，并在cite属性里用url来指向引用的资源"><a href="#块引用：块级元素从其他地方被引用，使用-lt-blockquote-gt-元素包裹起来，并在cite属性里用url来指向引用的资源" class="headerlink" title="块引用：块级元素从其他地方被引用，使用&lt; blockquote&gt;元素包裹起来，并在cite属性里用url来指向引用的资源"></a>块引用：块级元素从其他地方被引用，使用&lt; blockquote&gt;元素包裹起来，并在cite属性里用url来指向引用的资源</h4><h4 id="行内引用：与快引用类似，使用-lt-q-gt-元素包裹"><a href="#行内引用：与快引用类似，使用-lt-q-gt-元素包裹" class="headerlink" title="行内引用：与快引用类似，使用&lt; q&gt;元素包裹"></a>行内引用：与快引用类似，使用&lt; q&gt;元素包裹</h4><h3 id="7、文档与网站架构"><a href="#7、文档与网站架构" class="headerlink" title="7、文档与网站架构"></a>7、文档与网站架构</h3><h4 id="页眉：-lt-header-gt"><a href="#页眉：-lt-header-gt" class="headerlink" title="页眉：&lt; header&gt;"></a>页眉：&lt; header&gt;</h4><h4 id="导航栏：-lt-nav-gt"><a href="#导航栏：-lt-nav-gt" class="headerlink" title="导航栏：&lt; nav&gt;"></a>导航栏：&lt; nav&gt;</h4><h4 id="主内容：-lt-main-gt"><a href="#主内容：-lt-main-gt" class="headerlink" title="主内容：&lt; main&gt;"></a>主内容：&lt; main&gt;</h4><h4 id="子内容：-lt-section-gt-、-lt-article-gt-、-lt-div-gt-等"><a href="#子内容：-lt-section-gt-、-lt-article-gt-、-lt-div-gt-等" class="headerlink" title="子内容：&lt; section&gt;、&lt; article&gt;、&lt; div&gt;等"></a>子内容：&lt; section&gt;、&lt; article&gt;、&lt; div&gt;等</h4><h4 id="侧边栏：-lt-aside-gt"><a href="#侧边栏：-lt-aside-gt" class="headerlink" title="侧边栏：&lt; aside&gt;"></a>侧边栏：&lt; aside&gt;</h4><h4 id="页脚：-lt-footer-gt"><a href="#页脚：-lt-footer-gt" class="headerlink" title="页脚：&lt; footer&gt;"></a>页脚：&lt; footer&gt;</h4><h3 id="8、无语义元素"><a href="#8、无语义元素" class="headerlink" title="8、无语义元素"></a>8、无语义元素</h3><h4 id="lt-div-gt-块级无语义元素"><a href="#lt-div-gt-块级无语义元素" class="headerlink" title="&lt; div&gt;块级无语义元素"></a>&lt; div&gt;块级无语义元素</h4><h4 id="lt-span-gt-内联无语义元素"><a href="#lt-span-gt-内联无语义元素" class="headerlink" title="&lt; span&gt;内联无语义元素"></a>&lt; span&gt;内联无语义元素</h4><h3 id="9、换行与水平分割线"><a href="#9、换行与水平分割线" class="headerlink" title="9、换行与水平分割线"></a>9、换行与水平分割线</h3><h4 id="换行：-lt-br-gt"><a href="#换行：-lt-br-gt" class="headerlink" title="换行：&lt; br&gt;"></a>换行：&lt; br&gt;</h4><h4 id="水平分割线：-lt-hr-gt"><a href="#水平分割线：-lt-hr-gt" class="headerlink" title="水平分割线：&lt; hr&gt;"></a>水平分割线：&lt; hr&gt;</h4><h2 id="二、多媒体与嵌入"><a href="#二、多媒体与嵌入" class="headerlink" title="二、多媒体与嵌入"></a>二、多媒体与嵌入</h2><h3 id="1、图片"><a href="#1、图片" class="headerlink" title="1、图片"></a>1、图片</h3><h4 id="可以使用-lt-img-gt-来放入图片（-给图片的src取具体的名称更有利于seo的搜索）"><a href="#可以使用-lt-img-gt-来放入图片（-给图片的src取具体的名称更有利于seo的搜索）" class="headerlink" title="可以使用&lt; img&gt;来放入图片（*给图片的src取具体的名称更有利于seo的搜索）"></a>可以使用&lt; img&gt;来放入图片（*给图片的src取具体的名称更有利于seo的搜索）</h4><h4 id="alt属性：对图片的文字描述"><a href="#alt属性：对图片的文字描述" class="headerlink" title="alt属性：对图片的文字描述"></a>alt属性：对图片的文字描述</h4><h4 id="title属性：鼠标悬停提示"><a href="#title属性：鼠标悬停提示" class="headerlink" title="title属性：鼠标悬停提示"></a>title属性：鼠标悬停提示</h4><h4 id="lt-figure-gt-和-lt-figcaption-gt-元素：为图片提供一个语义容器，在标题和图片之间建立联系"><a href="#lt-figure-gt-和-lt-figcaption-gt-元素：为图片提供一个语义容器，在标题和图片之间建立联系" class="headerlink" title="&lt; figure&gt;和&lt; figcaption&gt;元素：为图片提供一个语义容器，在标题和图片之间建立联系"></a>&lt; figure&gt;和&lt; figcaption&gt;元素：为图片提供一个语义容器，在标题和图片之间建立联系</h4><h4 id="使用css来嵌入图片：-background-image：url（。。。）"><a href="#使用css来嵌入图片：-background-image：url（。。。）" class="headerlink" title="使用css来嵌入图片：{background-image：url（。。。）}"></a>使用css来嵌入图片：{background-image：url（。。。）}</h4><h3 id="2、视频和音频"><a href="#2、视频和音频" class="headerlink" title="2、视频和音频"></a>2、视频和音频</h3><h4 id="lt-video-gt-：嵌入视频"><a href="#lt-video-gt-：嵌入视频" class="headerlink" title="&lt; video&gt;：嵌入视频"></a>&lt; video&gt;：嵌入视频</h4><h4 id="src属性：同img"><a href="#src属性：同img" class="headerlink" title="src属性：同img"></a>src属性：同img</h4><h4 id="controls属性：规定浏览器是否为视频提供播放控件（布尔值）"><a href="#controls属性：规定浏览器是否为视频提供播放控件（布尔值）" class="headerlink" title="controls属性：规定浏览器是否为视频提供播放控件（布尔值）"></a>controls属性：规定浏览器是否为视频提供播放控件（布尔值）</h4><h4 id="不同浏览器支持的视频可能不同，可以用-lt-source-gt-标签，浏览器检查标签的type属性值来跳过不支持的格式"><a href="#不同浏览器支持的视频可能不同，可以用-lt-source-gt-标签，浏览器检查标签的type属性值来跳过不支持的格式" class="headerlink" title="不同浏览器支持的视频可能不同，可以用&lt; source&gt;标签，浏览器检查标签的type属性值来跳过不支持的格式"></a>不同浏览器支持的视频可能不同，可以用&lt; source&gt;标签，浏览器检查标签的type属性值来跳过不支持的格式</h4><h4 id="其他属性：weight、height、preload（可以用来缓冲较大的文件）、poster（指向一个图像url）等"><a href="#其他属性：weight、height、preload（可以用来缓冲较大的文件）、poster（指向一个图像url）等" class="headerlink" title="其他属性：weight、height、preload（可以用来缓冲较大的文件）、poster（指向一个图像url）等"></a>其他属性：weight、height、preload（可以用来缓冲较大的文件）、poster（指向一个图像url）等</h4><h4 id="lt-audio-gt-：几乎与video标签用法相同，但是没有视觉部件，因此无weight、height、poster等属性"><a href="#lt-audio-gt-：几乎与video标签用法相同，但是没有视觉部件，因此无weight、height、poster等属性" class="headerlink" title="&lt; audio&gt;：几乎与video标签用法相同，但是没有视觉部件，因此无weight、height、poster等属性"></a>&lt; audio&gt;：几乎与video标签用法相同，但是没有视觉部件，因此无weight、height、poster等属性</h4><h4 id="显示音频文本：WebVTT格式，使用-lt-track-gt-标签连接vtt文件，track、标签需要放在source标签之后，使用kind属性指明类型，使用srclang属性告诉浏览器说是什么语言写的（文本轨道会使网站更容易seo的搜索）"><a href="#显示音频文本：WebVTT格式，使用-lt-track-gt-标签连接vtt文件，track、标签需要放在source标签之后，使用kind属性指明类型，使用srclang属性告诉浏览器说是什么语言写的（文本轨道会使网站更容易seo的搜索）" class="headerlink" title="显示音频文本：WebVTT格式，使用&lt; track&gt;标签连接vtt文件，track、标签需要放在source标签之后，使用kind属性指明类型，使用srclang属性告诉浏览器说是什么语言写的（文本轨道会使网站更容易seo的搜索）"></a>显示音频文本：WebVTT格式，使用&lt; track&gt;标签连接vtt文件，track、标签需要放在source标签之后，使用kind属性指明类型，使用srclang属性告诉浏览器说是什么语言写的（文本轨道会使网站更容易seo的搜索）</h4><h3 id="3、其他嵌入"><a href="#3、其他嵌入" class="headerlink" title="3、其他嵌入"></a>3、其他嵌入</h3><h4 id="lt-iframe-gt-：可将整个web页嵌入到另一个网页"><a href="#lt-iframe-gt-：可将整个web页嵌入到另一个网页" class="headerlink" title="&lt; iframe&gt;：可将整个web页嵌入到另一个网页"></a>&lt; iframe&gt;：可将整个web页嵌入到另一个网页</h4><h4 id="基本属性：src、width、height、allowfullscreen、frameborder（默认1，两框架之间有边框，0则无边框）"><a href="#基本属性：src、width、height、allowfullscreen、frameborder（默认1，两框架之间有边框，0则无边框）" class="headerlink" title="基本属性：src、width、height、allowfullscreen、frameborder（默认1，两框架之间有边框，0则无边框）"></a>基本属性：src、width、height、allowfullscreen、frameborder（默认1，两框架之间有边框，0则无边框）</h4><h4 id="安全隐患：可能遭到单机劫持等黑客的攻击"><a href="#安全隐患：可能遭到单机劫持等黑客的攻击" class="headerlink" title="安全隐患：可能遭到单机劫持等黑客的攻击"></a>安全隐患：可能遭到单机劫持等黑客的攻击</h4><h4 id="可使用https减少远程内容的传输中被篡改的机会，防止嵌入式-内容访问父文档的内容"><a href="#可使用https减少远程内容的传输中被篡改的机会，防止嵌入式-内容访问父文档的内容" class="headerlink" title="可使用https减少远程内容的传输中被篡改的机会，防止嵌入式 内容访问父文档的内容"></a>可使用https减少远程内容的传输中被篡改的机会，防止嵌入式 内容访问父文档的内容</h4><h3 id="4、在网页中添加矢量图形"><a href="#4、在网页中添加矢量图形" class="headerlink" title="4、在网页中添加矢量图形"></a>4、在网页中添加矢量图形</h3><h4 id="位图：使用像素网格来定义、放大会像素化"><a href="#位图：使用像素网格来定义、放大会像素化" class="headerlink" title="位图：使用像素网格来定义、放大会像素化"></a>位图：使用像素网格来定义、放大会像素化</h4><h4 id="矢量图：使用算法来定义，放大不会像素化"><a href="#矢量图：使用算法来定义，放大不会像素化" class="headerlink" title="矢量图：使用算法来定义，放大不会像素化"></a>矢量图：使用算法来定义，放大不会像素化</h4><h4 id="svg：描述矢量图形的XML语言，SVG用于标记图形，可以使用-lt-circle-gt-lt-rect-gt-lt-feColorMatrix-gt-使用变换矩阵转换颜色-lt-animate-gt-（矢量图形的动画部分）-lt-mask-gt-等元素"><a href="#svg：描述矢量图形的XML语言，SVG用于标记图形，可以使用-lt-circle-gt-lt-rect-gt-lt-feColorMatrix-gt-使用变换矩阵转换颜色-lt-animate-gt-（矢量图形的动画部分）-lt-mask-gt-等元素" class="headerlink" title="svg：描述矢量图形的XML语言，SVG用于标记图形，可以使用&lt; circle&gt;&lt; rect&gt;&lt; feColorMatrix&gt;(使用变换矩阵转换颜色)&lt; animate&gt;（矢量图形的动画部分）&lt; mask&gt;等元素"></a>svg：描述矢量图形的XML语言，SVG用于标记图形，可以使用&lt; circle&gt;&lt; rect&gt;&lt; feColorMatrix&gt;(使用变换矩阵转换颜色)&lt; animate&gt;（矢量图形的动画部分）&lt; mask&gt;等元素</h4><h4 id="SVG优点：矢量图象的文本仍然可以访问（利于seo）、可以很好地适应脚本-样式"><a href="#SVG优点：矢量图象的文本仍然可以访问（利于seo）、可以很好地适应脚本-样式" class="headerlink" title="SVG优点：矢量图象的文本仍然可以访问（利于seo）、可以很好地适应脚本/样式"></a>SVG优点：矢量图象的文本仍然可以访问（利于seo）、可以很好地适应脚本/样式</h4><h4 id="缺点：容易变复杂、比栅格更难创建"><a href="#缺点：容易变复杂、比栅格更难创建" class="headerlink" title="缺点：容易变复杂、比栅格更难创建"></a>缺点：容易变复杂、比栅格更难创建</h4><h4 id="将svg添加到页面：img标签，在src中引用；使用svg作为css背景图片"><a href="#将svg添加到页面：img标签，在src中引用；使用svg作为css背景图片" class="headerlink" title="将svg添加到页面：img标签，在src中引用；使用svg作为css背景图片"></a>将svg添加到页面：img标签，在src中引用；使用svg作为css背景图片</h4><h4 id="内联SVG：文本编辑器中打开svg，复制代码，将其粘贴到HTML文档中"><a href="#内联SVG：文本编辑器中打开svg，复制代码，将其粘贴到HTML文档中" class="headerlink" title="内联SVG：文本编辑器中打开svg，复制代码，将其粘贴到HTML文档中"></a>内联SVG：文本编辑器中打开svg，复制代码，将其粘贴到HTML文档中</h4><h3 id="5、响应式图片"><a href="#5、响应式图片" class="headerlink" title="5、响应式图片"></a>5、响应式图片</h3><h4 id="创建自适应图片：img或者css背景图片"><a href="#创建自适应图片：img或者css背景图片" class="headerlink" title="创建自适应图片：img或者css背景图片"></a>创建自适应图片：img或者css背景图片</h4><h4 id="不同尺寸分辨率的切换：使用srcset和sizes属性"><a href="#不同尺寸分辨率的切换：使用srcset和sizes属性" class="headerlink" title="不同尺寸分辨率的切换：使用srcset和sizes属性"></a>不同尺寸分辨率的切换：使用srcset和sizes属性</h4><h4 id="srcset属性：定义了允许浏览器选择的图像集以及每个图像的大小（文件名-空格-图像的固有宽度如49w）"><a href="#srcset属性：定义了允许浏览器选择的图像集以及每个图像的大小（文件名-空格-图像的固有宽度如49w）" class="headerlink" title="srcset属性：定义了允许浏览器选择的图像集以及每个图像的大小（文件名+空格+图像的固有宽度如49w）"></a>srcset属性：定义了允许浏览器选择的图像集以及每个图像的大小（文件名+空格+图像的固有宽度如49w）</h4><h4 id="sizes属性：定义了一组媒体条件并指明当某些媒体条件为真时，什么样的图片尺寸时最佳选择（媒体条件-空格-条件为真时图像将填充的槽的宽度）"><a href="#sizes属性：定义了一组媒体条件并指明当某些媒体条件为真时，什么样的图片尺寸时最佳选择（媒体条件-空格-条件为真时图像将填充的槽的宽度）" class="headerlink" title="sizes属性：定义了一组媒体条件并指明当某些媒体条件为真时，什么样的图片尺寸时最佳选择（媒体条件+空格+条件为真时图像将填充的槽的宽度）"></a>sizes属性：定义了一组媒体条件并指明当某些媒体条件为真时，什么样的图片尺寸时最佳选择（媒体条件+空格+条件为真时图像将填充的槽的宽度）</h4><h4 id="同尺寸的不同分辨率切换：让srcset和x语法结合（css会应用到图片上）这时浏览器只是计算出正在显示的显示器的分辨率，然后提供srcset引用最合适的图像"><a href="#同尺寸的不同分辨率切换：让srcset和x语法结合（css会应用到图片上）这时浏览器只是计算出正在显示的显示器的分辨率，然后提供srcset引用最合适的图像" class="headerlink" title="同尺寸的不同分辨率切换：让srcset和x语法结合（css会应用到图片上）这时浏览器只是计算出正在显示的显示器的分辨率，然后提供srcset引用最合适的图像"></a>同尺寸的不同分辨率切换：让srcset和x语法结合（css会应用到图片上）这时浏览器只是计算出正在显示的显示器的分辨率，然后提供srcset引用最合适的图像</h4><h4 id="美术设计：通过-lt-picture-gt-元素，使用media属性，这个属性包含判断条件，满足了则显示srcset路径中相应的图片"><a href="#美术设计：通过-lt-picture-gt-元素，使用media属性，这个属性包含判断条件，满足了则显示srcset路径中相应的图片" class="headerlink" title="美术设计：通过&lt; picture&gt;元素，使用media属性，这个属性包含判断条件，满足了则显示srcset路径中相应的图片"></a>美术设计：通过&lt; picture&gt;元素，使用media属性，这个属性包含判断条件，满足了则显示srcset路径中相应的图片</h4><h2 id="三、HTML表格"><a href="#三、HTML表格" class="headerlink" title="三、HTML表格"></a>三、HTML表格</h2><h3 id="1、基本标签"><a href="#1、基本标签" class="headerlink" title="1、基本标签"></a>1、基本标签</h3><h4 id="lt-table-gt-每一个表格的内容都在此标签中"><a href="#lt-table-gt-每一个表格的内容都在此标签中" class="headerlink" title="&lt; table&gt;每一个表格的内容都在此标签中"></a>&lt; table&gt;每一个表格的内容都在此标签中</h4><h4 id="lt-td-gt-创建单元格"><a href="#lt-td-gt-创建单元格" class="headerlink" title="&lt; td&gt;创建单元格"></a>&lt; td&gt;创建单元格</h4><h4 id="lt-tr-gt-（table-row）会让单元格从第二行开始，一般包含td元素使用"><a href="#lt-tr-gt-（table-row）会让单元格从第二行开始，一般包含td元素使用" class="headerlink" title="&lt; tr&gt; （table row）会让单元格从第二行开始，一般包含td元素使用"></a>&lt; tr&gt; （table row）会让单元格从第二行开始，一般包含td元素使用</h4><h4 id="lt-th-gt-添加标题"><a href="#lt-th-gt-添加标题" class="headerlink" title="&lt; th&gt; 添加标题"></a>&lt; th&gt; 添加标题</h4><h3 id="2、允许单元格跨行和列"><a href="#2、允许单元格跨行和列" class="headerlink" title="2、允许单元格跨行和列"></a>2、允许单元格跨行和列</h3><h4 id="colspan属性：接收一个没有单位的数字，如果colspan-“2”，表示单元格的宽度是两个单元格"><a href="#colspan属性：接收一个没有单位的数字，如果colspan-“2”，表示单元格的宽度是两个单元格" class="headerlink" title="colspan属性：接收一个没有单位的数字，如果colspan=“2”，表示单元格的宽度是两个单元格"></a>colspan属性：接收一个没有单位的数字，如果colspan=“2”，表示单元格的宽度是两个单元格</h4><h4 id="rowspan属性：跨行"><a href="#rowspan属性：跨行" class="headerlink" title="rowspan属性：跨行"></a>rowspan属性：跨行</h4><h3 id="3、为表格中的列提供共同的样式"><a href="#3、为表格中的列提供共同的样式" class="headerlink" title="3、为表格中的列提供共同的样式"></a>3、为表格中的列提供共同的样式</h3><h4 id="在table标签下方定义-lt-clogroup-gt-lt-clo-gt-lt-clo-gt-lt-clogroup-gt-，其中clo来定义列的样式（第几列对应第几个clo元素）"><a href="#在table标签下方定义-lt-clogroup-gt-lt-clo-gt-lt-clo-gt-lt-clogroup-gt-，其中clo来定义列的样式（第几列对应第几个clo元素）" class="headerlink" title="在table标签下方定义&lt; clogroup&gt;&lt; clo&gt;&lt; clo&gt;&lt; /clogroup&gt;，其中clo来定义列的样式（第几列对应第几个clo元素）"></a>在table标签下方定义&lt; clogroup&gt;&lt; clo&gt;&lt; clo&gt;&lt; /clogroup&gt;，其中clo来定义列的样式（第几列对应第几个clo元素）</h4><h3 id="4、高级特性"><a href="#4、高级特性" class="headerlink" title="4、高级特性"></a>4、高级特性</h3><h4 id="lt-caption-gt-：为表格添加标题，放在table下"><a href="#lt-caption-gt-：为表格添加标题，放在table下" class="headerlink" title="&lt; caption&gt;：为表格添加标题，放在table下"></a>&lt; caption&gt;：为表格添加标题，放在table下</h4><h4 id="lt-thead-gt-：把表中部分标记为表头，嵌套在table元素中，放置在头部位置，需要放在clo元素下"><a href="#lt-thead-gt-：把表中部分标记为表头，嵌套在table元素中，放置在头部位置，需要放在clo元素下" class="headerlink" title="&lt; thead&gt;：把表中部分标记为表头，嵌套在table元素中，放置在头部位置，需要放在clo元素下"></a>&lt; thead&gt;：把表中部分标记为表头，嵌套在table元素中，放置在头部位置，需要放在clo元素下</h4><h4 id="lt-tfoot-gt-：标记为页脚，放置在底部的位置，一般最后一行"><a href="#lt-tfoot-gt-：标记为页脚，放置在底部的位置，一般最后一行" class="headerlink" title="&lt; tfoot&gt;：标记为页脚，放置在底部的位置，一般最后一行"></a>&lt; tfoot&gt;：标记为页脚，放置在底部的位置，一般最后一行</h4><h4 id="lt-tbody-gt-标记为正文，放置在上两元素之间"><a href="#lt-tbody-gt-标记为正文，放置在上两元素之间" class="headerlink" title="&lt; tbody&gt;标记为正文，放置在上两元素之间"></a>&lt; tbody&gt;标记为正文，放置在上两元素之间</h4><h3 id="5、嵌套表格"><a href="#5、嵌套表格" class="headerlink" title="5、嵌套表格"></a>5、嵌套表格</h3><h4 id="在table标签中嵌套完整的table标签"><a href="#在table标签中嵌套完整的table标签" class="headerlink" title="在table标签中嵌套完整的table标签"></a>在table标签中嵌套完整的table标签</h4><h3 id="6、相关属性"><a href="#6、相关属性" class="headerlink" title="6、相关属性"></a>6、相关属性</h3><h4 id="scope属性：可以添加在th元素中，用来帮助理解标题单元格是行标题还是列标题，可选值colgroup、rowgroup"><a href="#scope属性：可以添加在th元素中，用来帮助理解标题单元格是行标题还是列标题，可选值colgroup、rowgroup" class="headerlink" title="scope属性：可以添加在th元素中，用来帮助理解标题单元格是行标题还是列标题，可选值colgroup、rowgroup"></a>scope属性：可以添加在th元素中，用来帮助理解标题单元格是行标题还是列标题，可选值colgroup、rowgroup</h4><h4 id="id和标题属性：用id和headers属性创造标题和单元格之间的联系。可以为td元素添加headers属性，为th元素添加id属性"><a href="#id和标题属性：用id和headers属性创造标题和单元格之间的联系。可以为td元素添加headers属性，为th元素添加id属性" class="headerlink" title="id和标题属性：用id和headers属性创造标题和单元格之间的联系。可以为td元素添加headers属性，为th元素添加id属性"></a>id和标题属性：用id和headers属性创造标题和单元格之间的联系。可以为td元素添加headers属性，为th元素添加id属性</h4>
+    </div>
+  
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i># HTML</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/06/21/%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE/" rel="prev" title="我的第一个项目">
+      <i class="fa fa-chevron-left"></i> 我的第一个项目
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/06/23/CSS%E5%9F%BA%E7%A1%80/" rel="next" title="CSS基础">
+      CSS基础 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML"><span class="nav-number">1.</span> <span class="nav-text">HTML</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81html%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">一、html基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B6%85%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80%EF%BC%8C%E7%94%A8%E6%9D%A5%E5%AE%9A%E4%B9%89%E7%BD%91%E9%A1%B5%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">超文本标记语言，用来定义网页结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%EF%BC%9A%E5%8C%85%E5%90%AB%E5%BC%80%E5%A7%8B%E6%A0%87%E7%AD%BE%E3%80%81%E7%BB%93%E6%9D%9F%E6%A0%87%E7%AD%BE%E3%80%81%E5%86%85%E5%AE%B9%E3%80%81%E5%85%83%E7%B4%A0%EF%BC%88%E5%89%8D%E4%B8%89%E8%80%85%E7%BB%93%E5%90%88%E4%B8%BA%E5%85%83%E7%B4%A0%EF%BC%89"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">元素：包含开始标签、结束标签、内容、元素（前三者结合为元素）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E5%92%8C%E5%86%85%E8%81%94%E5%85%83%E7%B4%A0"><span class="nav-number">1.1.1.</span> <span class="nav-text">1、块级元素和内联元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%AD%E4%BB%A5%E5%9D%97%E7%9A%84%E5%BD%A2%E5%BC%8F%E5%B1%95%E7%8E%B0"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">块级元素在页面中以块的形式展现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E8%81%94%E5%85%83%E7%B4%A0%E9%80%9A%E5%B8%B8%E5%87%BA%E7%8E%B0%E5%9C%A8%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E4%B8%AD%E5%B9%B6%E7%8E%AF%E7%BB%95%E6%96%87%E6%A1%A3%E5%86%85%E5%AE%B9%E7%9A%84%E4%B8%80%E5%B0%8F%E9%83%A8%E5%88%86"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">内联元素通常出现在块级元素中并环绕文档内容的一小部分</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%85%83%E7%B4%A0%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="nav-number">1.1.2.</span> <span class="nav-text">2、元素的属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E5%8C%85%E5%90%AB%E5%85%83%E7%B4%A0%E7%9A%84%E9%A2%9D%E5%A4%96%E4%BF%A1%E6%81%AF%EF%BC%8C%E8%BF%99%E4%BA%9B%E4%BF%A1%E6%81%AF%E4%B8%8D%E4%BC%9A%E5%87%BA%E7%8E%B0%E5%9C%A8%E5%AE%9E%E9%99%85%E7%9A%84%E5%86%85%E5%AE%B9%E4%B8%AD"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">属性包含元素的额外信息，这些信息不会出现在实际的内容中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B1%9E%E6%80%A7%E5%80%BC%E6%9C%80%E5%A5%BD%E5%8A%A0%E5%BC%95%E5%8F%B7%EF%BC%8C%E4%BB%A5%E5%87%8F%E5%B0%91%E4%B8%8D%E5%BF%85%E8%A6%81%E7%9A%84%E9%94%99%E8%AF%AF"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">属性值最好加引号，以减少不必要的错误</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81html%E6%96%87%E6%A1%A3"><span class="nav-number">1.1.3.</span> <span class="nav-text">3、html文档</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-DOCTYPE-type-gt-%E5%A3%B0%E6%98%8E%E6%96%87%E6%A1%A3%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">&lt; !DOCTYPE type&gt;声明文档类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-html-gt-%E6%A0%87%E7%AD%BE%EF%BC%9A%E6%A0%B9%E5%85%83%E7%B4%A0"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">&lt; html&gt;标签：根元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-meta-charset-%E2%80%9Cuft-8%E2%80%9D-gt-%E8%AE%BE%E7%BD%AE%E6%96%87%E6%A1%A3%E4%BD%BF%E7%94%A8%E7%9A%84%E5%AD%97%E7%AC%A6%E9%9B%86%E7%BC%96%E7%A0%81"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">&lt; meta charset&#x3D;“uft-8”&gt;设置文档使用的字符集编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-title-gt-%E6%98%AF%E4%B8%80%E9%A1%B9%E5%85%83%E6%95%B0%E6%8D%AE%EF%BC%8C%E7%94%A8%E6%9D%A5%E6%A0%87%E8%AE%B0%E9%A1%B5%E9%9D%A2%E5%86%85%E7%9A%84%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.3.4.</span> <span class="nav-text">&lt;  title&gt;是一项元数据，用来标记页面内的标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-span-gt-%E6%B2%A1%E6%9C%89%E8%AF%AD%E4%B9%89"><span class="nav-number">1.1.3.5.</span> <span class="nav-text">&lt; span&gt;没有语义</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E6%96%87%E5%AD%97%E5%A4%84%E7%90%86"><span class="nav-number">1.1.4.</span> <span class="nav-text">4、文字处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%EF%BC%9A-lt-ul-gt-%EF%BC%8C%E9%87%8C%E9%9D%A2%E5%8C%85%E5%90%AB-lt-li-gt-%EF%BC%8C%E7%94%A8%E4%BA%8E%E6%A0%87%E8%AE%B0%E5%88%97%E8%A1%A8%E9%A1%B9%E7%9B%AE%E9%A1%BA%E5%BA%8F%E6%97%A0%E5%85%B3%E7%B4%A7%E8%A6%81%E7%9A%84%E5%88%97%E8%A1%A8"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">无序列表：&lt; ul&gt;，里面包含&lt; li&gt;，用于标记列表项目顺序无关紧要的列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%EF%BC%9A-lt-OL-gt-%EF%BC%8C%E9%9C%80%E8%A6%81%E6%8C%89%E7%85%A7%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%88%97%E5%87%BA%E6%9D%A5"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">有序列表：&lt; OL&gt;，需要按照项目的顺序列出来</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8%EF%BC%9Aol%E5%92%8Cul%E8%81%94%E5%90%88li%E4%BD%BF%E7%94%A8"><span class="nav-number">1.1.4.3.</span> <span class="nav-text">嵌套列表：ol和ul联合li使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%87%8D%E7%82%B9%E5%BC%BA%E8%B0%83-%EF%BC%9A-lt-em-gt-%E6%A0%87%E7%AD%BE%EF%BC%88%E6%96%9C%E4%BD%93%E5%BC%BA%E8%B0%83%EF%BC%89%E5%92%8C-lt-strong-gt-%E6%A0%87%E7%AD%BE%EF%BC%88%E5%8A%A0%E7%B2%97%E5%BC%BA%E8%B0%83%EF%BC%89"><span class="nav-number">1.1.4.4.</span> <span class="nav-text">重点强调 ：&lt; em&gt;标签（斜体强调）和&lt; strong&gt;标签（加粗强调）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-b-gt-%E7%B2%97%E4%BD%93-lt-i-gt-%E6%96%9C%E4%BD%93-lt-u-gt-%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="nav-number">1.1.4.5.</span> <span class="nav-text">&lt; b&gt;粗体 &lt; i&gt;斜体 &lt; u&gt;下划线</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-number">1.1.5.</span> <span class="nav-text">5、超链接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%86%E6%96%87%E6%9C%AC%E6%88%96%E5%85%B6%E4%BB%96%E5%86%85%E5%AE%B9%E8%BD%AC%E5%8C%96%E4%B8%BA-lt-a-gt-%E4%B8%AD%E7%9A%84%E9%93%BE%E6%8E%A5%EF%BC%8C%E7%BB%99%E5%AE%83href%E5%B1%9E%E6%80%A7"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">将文本或其他内容转化为&lt; a&gt;中的链接，给它href属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#url%EF%BC%9A%E7%BB%9D%E5%AF%B9url%E5%92%8C%E7%9B%B8%E5%AF%B9url"><span class="nav-number">1.1.6.</span> <span class="nav-text">url：绝对url和相对url</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%9D%E5%AF%B9url%EF%BC%9A%E6%8C%87%E5%90%91%E7%94%B1%E5%85%B6%E5%9C%A8web%E4%B8%8A%E7%9A%84%E7%BB%9D%E5%AF%B9%E4%BD%8D%E7%BD%AE%E5%AE%9A%E4%B9%89%E7%9A%84%E4%BD%8D%E7%BD%AE%EF%BC%8C%E4%B8%8D%E7%AE%A1url%E5%9C%A8%E5%93%AA%E9%87%8C%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%80%BB%E6%98%AF%E6%8C%87%E5%90%91%E7%A1%AE%E5%AE%9A%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="nav-number">1.1.6.1.</span> <span class="nav-text">绝对url：指向由其在web上的绝对位置定义的位置，不管url在哪里使用，总是指向确定的位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9B%B8%E5%AF%B9url%EF%BC%9A%E4%B8%80%E4%B8%AA%E7%9B%B8%E5%AF%B9url%E6%89%80%E6%8C%87%E5%90%91%E7%9A%84%E4%BD%8D%E7%BD%AE%E5%8F%96%E5%86%B3%E4%BA%8E%E5%85%B6%E6%89%80%E5%9C%A8%E6%96%87%E4%BB%B6%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="nav-number">1.1.6.2.</span> <span class="nav-text">相对url：一个相对url所指向的位置取决于其所在文件的位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%BD%E5%8F%AF%E8%83%BD%E9%80%89%E6%8B%A9%E7%9B%B8%E5%AF%B9rul%EF%BC%88%E6%9B%B4%E6%98%93%E6%A3%80%E6%9F%A5%E3%80%81%E6%95%88%E7%8E%87%E6%9B%B4%E9%AB%98%EF%BC%89"><span class="nav-number">1.1.6.3.</span> <span class="nav-text">尽可能选择相对rul（更易检查、效率更高）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E5%BC%95%E7%94%A8"><span class="nav-number">1.1.7.</span> <span class="nav-text">6、引用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9D%97%E5%BC%95%E7%94%A8%EF%BC%9A%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E4%BB%8E%E5%85%B6%E4%BB%96%E5%9C%B0%E6%96%B9%E8%A2%AB%E5%BC%95%E7%94%A8%EF%BC%8C%E4%BD%BF%E7%94%A8-lt-blockquote-gt-%E5%85%83%E7%B4%A0%E5%8C%85%E8%A3%B9%E8%B5%B7%E6%9D%A5%EF%BC%8C%E5%B9%B6%E5%9C%A8cite%E5%B1%9E%E6%80%A7%E9%87%8C%E7%94%A8url%E6%9D%A5%E6%8C%87%E5%90%91%E5%BC%95%E7%94%A8%E7%9A%84%E8%B5%84%E6%BA%90"><span class="nav-number">1.1.7.1.</span> <span class="nav-text">块引用：块级元素从其他地方被引用，使用&lt; blockquote&gt;元素包裹起来，并在cite属性里用url来指向引用的资源</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8C%E5%86%85%E5%BC%95%E7%94%A8%EF%BC%9A%E4%B8%8E%E5%BF%AB%E5%BC%95%E7%94%A8%E7%B1%BB%E4%BC%BC%EF%BC%8C%E4%BD%BF%E7%94%A8-lt-q-gt-%E5%85%83%E7%B4%A0%E5%8C%85%E8%A3%B9"><span class="nav-number">1.1.7.2.</span> <span class="nav-text">行内引用：与快引用类似，使用&lt; q&gt;元素包裹</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7%E3%80%81%E6%96%87%E6%A1%A3%E4%B8%8E%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84"><span class="nav-number">1.1.8.</span> <span class="nav-text">7、文档与网站架构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B5%E7%9C%89%EF%BC%9A-lt-header-gt"><span class="nav-number">1.1.8.1.</span> <span class="nav-text">页眉：&lt; header&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%BC%E8%88%AA%E6%A0%8F%EF%BC%9A-lt-nav-gt"><span class="nav-number">1.1.8.2.</span> <span class="nav-text">导航栏：&lt; nav&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BB%E5%86%85%E5%AE%B9%EF%BC%9A-lt-main-gt"><span class="nav-number">1.1.8.3.</span> <span class="nav-text">主内容：&lt; main&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%90%E5%86%85%E5%AE%B9%EF%BC%9A-lt-section-gt-%E3%80%81-lt-article-gt-%E3%80%81-lt-div-gt-%E7%AD%89"><span class="nav-number">1.1.8.4.</span> <span class="nav-text">子内容：&lt; section&gt;、&lt; article&gt;、&lt; div&gt;等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BE%A7%E8%BE%B9%E6%A0%8F%EF%BC%9A-lt-aside-gt"><span class="nav-number">1.1.8.5.</span> <span class="nav-text">侧边栏：&lt; aside&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B5%E8%84%9A%EF%BC%9A-lt-footer-gt"><span class="nav-number">1.1.8.6.</span> <span class="nav-text">页脚：&lt; footer&gt;</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8%E3%80%81%E6%97%A0%E8%AF%AD%E4%B9%89%E5%85%83%E7%B4%A0"><span class="nav-number">1.1.9.</span> <span class="nav-text">8、无语义元素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-div-gt-%E5%9D%97%E7%BA%A7%E6%97%A0%E8%AF%AD%E4%B9%89%E5%85%83%E7%B4%A0"><span class="nav-number">1.1.9.1.</span> <span class="nav-text">&lt; div&gt;块级无语义元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-span-gt-%E5%86%85%E8%81%94%E6%97%A0%E8%AF%AD%E4%B9%89%E5%85%83%E7%B4%A0"><span class="nav-number">1.1.9.2.</span> <span class="nav-text">&lt; span&gt;内联无语义元素</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9%E3%80%81%E6%8D%A2%E8%A1%8C%E4%B8%8E%E6%B0%B4%E5%B9%B3%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">1.1.10.</span> <span class="nav-text">9、换行与水平分割线</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8D%A2%E8%A1%8C%EF%BC%9A-lt-br-gt"><span class="nav-number">1.1.10.1.</span> <span class="nav-text">换行：&lt; br&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B0%B4%E5%B9%B3%E5%88%86%E5%89%B2%E7%BA%BF%EF%BC%9A-lt-hr-gt"><span class="nav-number">1.1.10.2.</span> <span class="nav-text">水平分割线：&lt; hr&gt;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%A4%9A%E5%AA%92%E4%BD%93%E4%B8%8E%E5%B5%8C%E5%85%A5"><span class="nav-number">1.2.</span> <span class="nav-text">二、多媒体与嵌入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%9B%BE%E7%89%87"><span class="nav-number">1.2.1.</span> <span class="nav-text">1、图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8-lt-img-gt-%E6%9D%A5%E6%94%BE%E5%85%A5%E5%9B%BE%E7%89%87%EF%BC%88-%E7%BB%99%E5%9B%BE%E7%89%87%E7%9A%84src%E5%8F%96%E5%85%B7%E4%BD%93%E7%9A%84%E5%90%8D%E7%A7%B0%E6%9B%B4%E6%9C%89%E5%88%A9%E4%BA%8Eseo%E7%9A%84%E6%90%9C%E7%B4%A2%EF%BC%89"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">可以使用&lt; img&gt;来放入图片（*给图片的src取具体的名称更有利于seo的搜索）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#alt%E5%B1%9E%E6%80%A7%EF%BC%9A%E5%AF%B9%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%87%E5%AD%97%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">alt属性：对图片的文字描述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#title%E5%B1%9E%E6%80%A7%EF%BC%9A%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E6%8F%90%E7%A4%BA"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">title属性：鼠标悬停提示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-figure-gt-%E5%92%8C-lt-figcaption-gt-%E5%85%83%E7%B4%A0%EF%BC%9A%E4%B8%BA%E5%9B%BE%E7%89%87%E6%8F%90%E4%BE%9B%E4%B8%80%E4%B8%AA%E8%AF%AD%E4%B9%89%E5%AE%B9%E5%99%A8%EF%BC%8C%E5%9C%A8%E6%A0%87%E9%A2%98%E5%92%8C%E5%9B%BE%E7%89%87%E4%B9%8B%E9%97%B4%E5%BB%BA%E7%AB%8B%E8%81%94%E7%B3%BB"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">&lt; figure&gt;和&lt; figcaption&gt;元素：为图片提供一个语义容器，在标题和图片之间建立联系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8css%E6%9D%A5%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87%EF%BC%9A-background-image%EF%BC%9Aurl%EF%BC%88%E3%80%82%E3%80%82%E3%80%82%EF%BC%89"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">使用css来嵌入图片：{background-image：url（。。。）}</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E8%A7%86%E9%A2%91%E5%92%8C%E9%9F%B3%E9%A2%91"><span class="nav-number">1.2.2.</span> <span class="nav-text">2、视频和音频</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-video-gt-%EF%BC%9A%E5%B5%8C%E5%85%A5%E8%A7%86%E9%A2%91"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">&lt; video&gt;：嵌入视频</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#src%E5%B1%9E%E6%80%A7%EF%BC%9A%E5%90%8Cimg"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">src属性：同img</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#controls%E5%B1%9E%E6%80%A7%EF%BC%9A%E8%A7%84%E5%AE%9A%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%90%A6%E4%B8%BA%E8%A7%86%E9%A2%91%E6%8F%90%E4%BE%9B%E6%92%AD%E6%94%BE%E6%8E%A7%E4%BB%B6%EF%BC%88%E5%B8%83%E5%B0%94%E5%80%BC%EF%BC%89"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">controls属性：规定浏览器是否为视频提供播放控件（布尔值）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%AF%E6%8C%81%E7%9A%84%E8%A7%86%E9%A2%91%E5%8F%AF%E8%83%BD%E4%B8%8D%E5%90%8C%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%94%A8-lt-source-gt-%E6%A0%87%E7%AD%BE%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%A3%80%E6%9F%A5%E6%A0%87%E7%AD%BE%E7%9A%84type%E5%B1%9E%E6%80%A7%E5%80%BC%E6%9D%A5%E8%B7%B3%E8%BF%87%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">不同浏览器支持的视频可能不同，可以用&lt; source&gt;标签，浏览器检查标签的type属性值来跳过不支持的格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%B1%9E%E6%80%A7%EF%BC%9Aweight%E3%80%81height%E3%80%81preload%EF%BC%88%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%9D%A5%E7%BC%93%E5%86%B2%E8%BE%83%E5%A4%A7%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%89%E3%80%81poster%EF%BC%88%E6%8C%87%E5%90%91%E4%B8%80%E4%B8%AA%E5%9B%BE%E5%83%8Furl%EF%BC%89%E7%AD%89"><span class="nav-number">1.2.2.5.</span> <span class="nav-text">其他属性：weight、height、preload（可以用来缓冲较大的文件）、poster（指向一个图像url）等</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-audio-gt-%EF%BC%9A%E5%87%A0%E4%B9%8E%E4%B8%8Evideo%E6%A0%87%E7%AD%BE%E7%94%A8%E6%B3%95%E7%9B%B8%E5%90%8C%EF%BC%8C%E4%BD%86%E6%98%AF%E6%B2%A1%E6%9C%89%E8%A7%86%E8%A7%89%E9%83%A8%E4%BB%B6%EF%BC%8C%E5%9B%A0%E6%AD%A4%E6%97%A0weight%E3%80%81height%E3%80%81poster%E7%AD%89%E5%B1%9E%E6%80%A7"><span class="nav-number">1.2.2.6.</span> <span class="nav-text">&lt; audio&gt;：几乎与video标签用法相同，但是没有视觉部件，因此无weight、height、poster等属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E9%9F%B3%E9%A2%91%E6%96%87%E6%9C%AC%EF%BC%9AWebVTT%E6%A0%BC%E5%BC%8F%EF%BC%8C%E4%BD%BF%E7%94%A8-lt-track-gt-%E6%A0%87%E7%AD%BE%E8%BF%9E%E6%8E%A5vtt%E6%96%87%E4%BB%B6%EF%BC%8Ctrack%E3%80%81%E6%A0%87%E7%AD%BE%E9%9C%80%E8%A6%81%E6%94%BE%E5%9C%A8source%E6%A0%87%E7%AD%BE%E4%B9%8B%E5%90%8E%EF%BC%8C%E4%BD%BF%E7%94%A8kind%E5%B1%9E%E6%80%A7%E6%8C%87%E6%98%8E%E7%B1%BB%E5%9E%8B%EF%BC%8C%E4%BD%BF%E7%94%A8srclang%E5%B1%9E%E6%80%A7%E5%91%8A%E8%AF%89%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AF%B4%E6%98%AF%E4%BB%80%E4%B9%88%E8%AF%AD%E8%A8%80%E5%86%99%E7%9A%84%EF%BC%88%E6%96%87%E6%9C%AC%E8%BD%A8%E9%81%93%E4%BC%9A%E4%BD%BF%E7%BD%91%E7%AB%99%E6%9B%B4%E5%AE%B9%E6%98%93seo%E7%9A%84%E6%90%9C%E7%B4%A2%EF%BC%89"><span class="nav-number">1.2.2.7.</span> <span class="nav-text">显示音频文本：WebVTT格式，使用&lt; track&gt;标签连接vtt文件，track、标签需要放在source标签之后，使用kind属性指明类型，使用srclang属性告诉浏览器说是什么语言写的（文本轨道会使网站更容易seo的搜索）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E5%85%B6%E4%BB%96%E5%B5%8C%E5%85%A5"><span class="nav-number">1.2.3.</span> <span class="nav-text">3、其他嵌入</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-iframe-gt-%EF%BC%9A%E5%8F%AF%E5%B0%86%E6%95%B4%E4%B8%AAweb%E9%A1%B5%E5%B5%8C%E5%85%A5%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E7%BD%91%E9%A1%B5"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">&lt; iframe&gt;：可将整个web页嵌入到另一个网页</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7%EF%BC%9Asrc%E3%80%81width%E3%80%81height%E3%80%81allowfullscreen%E3%80%81frameborder%EF%BC%88%E9%BB%98%E8%AE%A41%EF%BC%8C%E4%B8%A4%E6%A1%86%E6%9E%B6%E4%B9%8B%E9%97%B4%E6%9C%89%E8%BE%B9%E6%A1%86%EF%BC%8C0%E5%88%99%E6%97%A0%E8%BE%B9%E6%A1%86%EF%BC%89"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">基本属性：src、width、height、allowfullscreen、frameborder（默认1，两框架之间有边框，0则无边框）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E9%9A%90%E6%82%A3%EF%BC%9A%E5%8F%AF%E8%83%BD%E9%81%AD%E5%88%B0%E5%8D%95%E6%9C%BA%E5%8A%AB%E6%8C%81%E7%AD%89%E9%BB%91%E5%AE%A2%E7%9A%84%E6%94%BB%E5%87%BB"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">安全隐患：可能遭到单机劫持等黑客的攻击</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%AF%E4%BD%BF%E7%94%A8https%E5%87%8F%E5%B0%91%E8%BF%9C%E7%A8%8B%E5%86%85%E5%AE%B9%E7%9A%84%E4%BC%A0%E8%BE%93%E4%B8%AD%E8%A2%AB%E7%AF%A1%E6%94%B9%E7%9A%84%E6%9C%BA%E4%BC%9A%EF%BC%8C%E9%98%B2%E6%AD%A2%E5%B5%8C%E5%85%A5%E5%BC%8F-%E5%86%85%E5%AE%B9%E8%AE%BF%E9%97%AE%E7%88%B6%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">可使用https减少远程内容的传输中被篡改的机会，防止嵌入式 内容访问父文档的内容</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E6%B7%BB%E5%8A%A0%E7%9F%A2%E9%87%8F%E5%9B%BE%E5%BD%A2"><span class="nav-number">1.2.4.</span> <span class="nav-text">4、在网页中添加矢量图形</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%8D%E5%9B%BE%EF%BC%9A%E4%BD%BF%E7%94%A8%E5%83%8F%E7%B4%A0%E7%BD%91%E6%A0%BC%E6%9D%A5%E5%AE%9A%E4%B9%89%E3%80%81%E6%94%BE%E5%A4%A7%E4%BC%9A%E5%83%8F%E7%B4%A0%E5%8C%96"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">位图：使用像素网格来定义、放大会像素化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9F%A2%E9%87%8F%E5%9B%BE%EF%BC%9A%E4%BD%BF%E7%94%A8%E7%AE%97%E6%B3%95%E6%9D%A5%E5%AE%9A%E4%B9%89%EF%BC%8C%E6%94%BE%E5%A4%A7%E4%B8%8D%E4%BC%9A%E5%83%8F%E7%B4%A0%E5%8C%96"><span class="nav-number">1.2.4.2.</span> <span class="nav-text">矢量图：使用算法来定义，放大不会像素化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#svg%EF%BC%9A%E6%8F%8F%E8%BF%B0%E7%9F%A2%E9%87%8F%E5%9B%BE%E5%BD%A2%E7%9A%84XML%E8%AF%AD%E8%A8%80%EF%BC%8CSVG%E7%94%A8%E4%BA%8E%E6%A0%87%E8%AE%B0%E5%9B%BE%E5%BD%A2%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8-lt-circle-gt-lt-rect-gt-lt-feColorMatrix-gt-%E4%BD%BF%E7%94%A8%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5%E8%BD%AC%E6%8D%A2%E9%A2%9C%E8%89%B2-lt-animate-gt-%EF%BC%88%E7%9F%A2%E9%87%8F%E5%9B%BE%E5%BD%A2%E7%9A%84%E5%8A%A8%E7%94%BB%E9%83%A8%E5%88%86%EF%BC%89-lt-mask-gt-%E7%AD%89%E5%85%83%E7%B4%A0"><span class="nav-number">1.2.4.3.</span> <span class="nav-text">svg：描述矢量图形的XML语言，SVG用于标记图形，可以使用&lt; circle&gt;&lt; rect&gt;&lt; feColorMatrix&gt;(使用变换矩阵转换颜色)&lt; animate&gt;（矢量图形的动画部分）&lt; mask&gt;等元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SVG%E4%BC%98%E7%82%B9%EF%BC%9A%E7%9F%A2%E9%87%8F%E5%9B%BE%E8%B1%A1%E7%9A%84%E6%96%87%E6%9C%AC%E4%BB%8D%E7%84%B6%E5%8F%AF%E4%BB%A5%E8%AE%BF%E9%97%AE%EF%BC%88%E5%88%A9%E4%BA%8Eseo%EF%BC%89%E3%80%81%E5%8F%AF%E4%BB%A5%E5%BE%88%E5%A5%BD%E5%9C%B0%E9%80%82%E5%BA%94%E8%84%9A%E6%9C%AC-%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.2.4.4.</span> <span class="nav-text">SVG优点：矢量图象的文本仍然可以访问（利于seo）、可以很好地适应脚本&#x2F;样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%BA%E7%82%B9%EF%BC%9A%E5%AE%B9%E6%98%93%E5%8F%98%E5%A4%8D%E6%9D%82%E3%80%81%E6%AF%94%E6%A0%85%E6%A0%BC%E6%9B%B4%E9%9A%BE%E5%88%9B%E5%BB%BA"><span class="nav-number">1.2.4.5.</span> <span class="nav-text">缺点：容易变复杂、比栅格更难创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%86svg%E6%B7%BB%E5%8A%A0%E5%88%B0%E9%A1%B5%E9%9D%A2%EF%BC%9Aimg%E6%A0%87%E7%AD%BE%EF%BC%8C%E5%9C%A8src%E4%B8%AD%E5%BC%95%E7%94%A8%EF%BC%9B%E4%BD%BF%E7%94%A8svg%E4%BD%9C%E4%B8%BAcss%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">1.2.4.6.</span> <span class="nav-text">将svg添加到页面：img标签，在src中引用；使用svg作为css背景图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E8%81%94SVG%EF%BC%9A%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E4%B8%AD%E6%89%93%E5%BC%80svg%EF%BC%8C%E5%A4%8D%E5%88%B6%E4%BB%A3%E7%A0%81%EF%BC%8C%E5%B0%86%E5%85%B6%E7%B2%98%E8%B4%B4%E5%88%B0HTML%E6%96%87%E6%A1%A3%E4%B8%AD"><span class="nav-number">1.2.4.7.</span> <span class="nav-text">内联SVG：文本编辑器中打开svg，复制代码，将其粘贴到HTML文档中</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E5%93%8D%E5%BA%94%E5%BC%8F%E5%9B%BE%E7%89%87"><span class="nav-number">1.2.5.</span> <span class="nav-text">5、响应式图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E8%87%AA%E9%80%82%E5%BA%94%E5%9B%BE%E7%89%87%EF%BC%9Aimg%E6%88%96%E8%80%85css%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">1.2.5.1.</span> <span class="nav-text">创建自适应图片：img或者css背景图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E5%B0%BA%E5%AF%B8%E5%88%86%E8%BE%A8%E7%8E%87%E7%9A%84%E5%88%87%E6%8D%A2%EF%BC%9A%E4%BD%BF%E7%94%A8srcset%E5%92%8Csizes%E5%B1%9E%E6%80%A7"><span class="nav-number">1.2.5.2.</span> <span class="nav-text">不同尺寸分辨率的切换：使用srcset和sizes属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#srcset%E5%B1%9E%E6%80%A7%EF%BC%9A%E5%AE%9A%E4%B9%89%E4%BA%86%E5%85%81%E8%AE%B8%E6%B5%8F%E8%A7%88%E5%99%A8%E9%80%89%E6%8B%A9%E7%9A%84%E5%9B%BE%E5%83%8F%E9%9B%86%E4%BB%A5%E5%8F%8A%E6%AF%8F%E4%B8%AA%E5%9B%BE%E5%83%8F%E7%9A%84%E5%A4%A7%E5%B0%8F%EF%BC%88%E6%96%87%E4%BB%B6%E5%90%8D-%E7%A9%BA%E6%A0%BC-%E5%9B%BE%E5%83%8F%E7%9A%84%E5%9B%BA%E6%9C%89%E5%AE%BD%E5%BA%A6%E5%A6%8249w%EF%BC%89"><span class="nav-number">1.2.5.3.</span> <span class="nav-text">srcset属性：定义了允许浏览器选择的图像集以及每个图像的大小（文件名+空格+图像的固有宽度如49w）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sizes%E5%B1%9E%E6%80%A7%EF%BC%9A%E5%AE%9A%E4%B9%89%E4%BA%86%E4%B8%80%E7%BB%84%E5%AA%92%E4%BD%93%E6%9D%A1%E4%BB%B6%E5%B9%B6%E6%8C%87%E6%98%8E%E5%BD%93%E6%9F%90%E4%BA%9B%E5%AA%92%E4%BD%93%E6%9D%A1%E4%BB%B6%E4%B8%BA%E7%9C%9F%E6%97%B6%EF%BC%8C%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E5%9B%BE%E7%89%87%E5%B0%BA%E5%AF%B8%E6%97%B6%E6%9C%80%E4%BD%B3%E9%80%89%E6%8B%A9%EF%BC%88%E5%AA%92%E4%BD%93%E6%9D%A1%E4%BB%B6-%E7%A9%BA%E6%A0%BC-%E6%9D%A1%E4%BB%B6%E4%B8%BA%E7%9C%9F%E6%97%B6%E5%9B%BE%E5%83%8F%E5%B0%86%E5%A1%AB%E5%85%85%E7%9A%84%E6%A7%BD%E7%9A%84%E5%AE%BD%E5%BA%A6%EF%BC%89"><span class="nav-number">1.2.5.4.</span> <span class="nav-text">sizes属性：定义了一组媒体条件并指明当某些媒体条件为真时，什么样的图片尺寸时最佳选择（媒体条件+空格+条件为真时图像将填充的槽的宽度）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8C%E5%B0%BA%E5%AF%B8%E7%9A%84%E4%B8%8D%E5%90%8C%E5%88%86%E8%BE%A8%E7%8E%87%E5%88%87%E6%8D%A2%EF%BC%9A%E8%AE%A9srcset%E5%92%8Cx%E8%AF%AD%E6%B3%95%E7%BB%93%E5%90%88%EF%BC%88css%E4%BC%9A%E5%BA%94%E7%94%A8%E5%88%B0%E5%9B%BE%E7%89%87%E4%B8%8A%EF%BC%89%E8%BF%99%E6%97%B6%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%AA%E6%98%AF%E8%AE%A1%E7%AE%97%E5%87%BA%E6%AD%A3%E5%9C%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%98%BE%E7%A4%BA%E5%99%A8%E7%9A%84%E5%88%86%E8%BE%A8%E7%8E%87%EF%BC%8C%E7%84%B6%E5%90%8E%E6%8F%90%E4%BE%9Bsrcset%E5%BC%95%E7%94%A8%E6%9C%80%E5%90%88%E9%80%82%E7%9A%84%E5%9B%BE%E5%83%8F"><span class="nav-number">1.2.5.5.</span> <span class="nav-text">同尺寸的不同分辨率切换：让srcset和x语法结合（css会应用到图片上）这时浏览器只是计算出正在显示的显示器的分辨率，然后提供srcset引用最合适的图像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BE%8E%E6%9C%AF%E8%AE%BE%E8%AE%A1%EF%BC%9A%E9%80%9A%E8%BF%87-lt-picture-gt-%E5%85%83%E7%B4%A0%EF%BC%8C%E4%BD%BF%E7%94%A8media%E5%B1%9E%E6%80%A7%EF%BC%8C%E8%BF%99%E4%B8%AA%E5%B1%9E%E6%80%A7%E5%8C%85%E5%90%AB%E5%88%A4%E6%96%AD%E6%9D%A1%E4%BB%B6%EF%BC%8C%E6%BB%A1%E8%B6%B3%E4%BA%86%E5%88%99%E6%98%BE%E7%A4%BAsrcset%E8%B7%AF%E5%BE%84%E4%B8%AD%E7%9B%B8%E5%BA%94%E7%9A%84%E5%9B%BE%E7%89%87"><span class="nav-number">1.2.5.6.</span> <span class="nav-text">美术设计：通过&lt; picture&gt;元素，使用media属性，这个属性包含判断条件，满足了则显示srcset路径中相应的图片</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81HTML%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.3.</span> <span class="nav-text">三、HTML表格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE"><span class="nav-number">1.3.1.</span> <span class="nav-text">1、基本标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-table-gt-%E6%AF%8F%E4%B8%80%E4%B8%AA%E8%A1%A8%E6%A0%BC%E7%9A%84%E5%86%85%E5%AE%B9%E9%83%BD%E5%9C%A8%E6%AD%A4%E6%A0%87%E7%AD%BE%E4%B8%AD"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">&lt; table&gt;每一个表格的内容都在此标签中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-td-gt-%E5%88%9B%E5%BB%BA%E5%8D%95%E5%85%83%E6%A0%BC"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">&lt; td&gt;创建单元格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-tr-gt-%EF%BC%88table-row%EF%BC%89%E4%BC%9A%E8%AE%A9%E5%8D%95%E5%85%83%E6%A0%BC%E4%BB%8E%E7%AC%AC%E4%BA%8C%E8%A1%8C%E5%BC%80%E5%A7%8B%EF%BC%8C%E4%B8%80%E8%88%AC%E5%8C%85%E5%90%ABtd%E5%85%83%E7%B4%A0%E4%BD%BF%E7%94%A8"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">&lt; tr&gt; （table row）会让单元格从第二行开始，一般包含td元素使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-th-gt-%E6%B7%BB%E5%8A%A0%E6%A0%87%E9%A2%98"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">&lt; th&gt; 添加标题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E5%85%81%E8%AE%B8%E5%8D%95%E5%85%83%E6%A0%BC%E8%B7%A8%E8%A1%8C%E5%92%8C%E5%88%97"><span class="nav-number">1.3.2.</span> <span class="nav-text">2、允许单元格跨行和列</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#colspan%E5%B1%9E%E6%80%A7%EF%BC%9A%E6%8E%A5%E6%94%B6%E4%B8%80%E4%B8%AA%E6%B2%A1%E6%9C%89%E5%8D%95%E4%BD%8D%E7%9A%84%E6%95%B0%E5%AD%97%EF%BC%8C%E5%A6%82%E6%9E%9Ccolspan-%E2%80%9C2%E2%80%9D%EF%BC%8C%E8%A1%A8%E7%A4%BA%E5%8D%95%E5%85%83%E6%A0%BC%E7%9A%84%E5%AE%BD%E5%BA%A6%E6%98%AF%E4%B8%A4%E4%B8%AA%E5%8D%95%E5%85%83%E6%A0%BC"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">colspan属性：接收一个没有单位的数字，如果colspan&#x3D;“2”，表示单元格的宽度是两个单元格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rowspan%E5%B1%9E%E6%80%A7%EF%BC%9A%E8%B7%A8%E8%A1%8C"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">rowspan属性：跨行</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E4%B8%BA%E8%A1%A8%E6%A0%BC%E4%B8%AD%E7%9A%84%E5%88%97%E6%8F%90%E4%BE%9B%E5%85%B1%E5%90%8C%E7%9A%84%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.3.3.</span> <span class="nav-text">3、为表格中的列提供共同的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8table%E6%A0%87%E7%AD%BE%E4%B8%8B%E6%96%B9%E5%AE%9A%E4%B9%89-lt-clogroup-gt-lt-clo-gt-lt-clo-gt-lt-clogroup-gt-%EF%BC%8C%E5%85%B6%E4%B8%ADclo%E6%9D%A5%E5%AE%9A%E4%B9%89%E5%88%97%E7%9A%84%E6%A0%B7%E5%BC%8F%EF%BC%88%E7%AC%AC%E5%87%A0%E5%88%97%E5%AF%B9%E5%BA%94%E7%AC%AC%E5%87%A0%E4%B8%AAclo%E5%85%83%E7%B4%A0%EF%BC%89"><span class="nav-number">1.3.3.1.</span> <span class="nav-text">在table标签下方定义&lt; clogroup&gt;&lt; clo&gt;&lt; clo&gt;&lt; &#x2F;clogroup&gt;，其中clo来定义列的样式（第几列对应第几个clo元素）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7"><span class="nav-number">1.3.4.</span> <span class="nav-text">4、高级特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-caption-gt-%EF%BC%9A%E4%B8%BA%E8%A1%A8%E6%A0%BC%E6%B7%BB%E5%8A%A0%E6%A0%87%E9%A2%98%EF%BC%8C%E6%94%BE%E5%9C%A8table%E4%B8%8B"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">&lt; caption&gt;：为表格添加标题，放在table下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-thead-gt-%EF%BC%9A%E6%8A%8A%E8%A1%A8%E4%B8%AD%E9%83%A8%E5%88%86%E6%A0%87%E8%AE%B0%E4%B8%BA%E8%A1%A8%E5%A4%B4%EF%BC%8C%E5%B5%8C%E5%A5%97%E5%9C%A8table%E5%85%83%E7%B4%A0%E4%B8%AD%EF%BC%8C%E6%94%BE%E7%BD%AE%E5%9C%A8%E5%A4%B4%E9%83%A8%E4%BD%8D%E7%BD%AE%EF%BC%8C%E9%9C%80%E8%A6%81%E6%94%BE%E5%9C%A8clo%E5%85%83%E7%B4%A0%E4%B8%8B"><span class="nav-number">1.3.4.2.</span> <span class="nav-text">&lt; thead&gt;：把表中部分标记为表头，嵌套在table元素中，放置在头部位置，需要放在clo元素下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-tfoot-gt-%EF%BC%9A%E6%A0%87%E8%AE%B0%E4%B8%BA%E9%A1%B5%E8%84%9A%EF%BC%8C%E6%94%BE%E7%BD%AE%E5%9C%A8%E5%BA%95%E9%83%A8%E7%9A%84%E4%BD%8D%E7%BD%AE%EF%BC%8C%E4%B8%80%E8%88%AC%E6%9C%80%E5%90%8E%E4%B8%80%E8%A1%8C"><span class="nav-number">1.3.4.3.</span> <span class="nav-text">&lt; tfoot&gt;：标记为页脚，放置在底部的位置，一般最后一行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#lt-tbody-gt-%E6%A0%87%E8%AE%B0%E4%B8%BA%E6%AD%A3%E6%96%87%EF%BC%8C%E6%94%BE%E7%BD%AE%E5%9C%A8%E4%B8%8A%E4%B8%A4%E5%85%83%E7%B4%A0%E4%B9%8B%E9%97%B4"><span class="nav-number">1.3.4.4.</span> <span class="nav-text">&lt; tbody&gt;标记为正文，放置在上两元素之间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E5%B5%8C%E5%A5%97%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.3.5.</span> <span class="nav-text">5、嵌套表格</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8table%E6%A0%87%E7%AD%BE%E4%B8%AD%E5%B5%8C%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84table%E6%A0%87%E7%AD%BE"><span class="nav-number">1.3.5.1.</span> <span class="nav-text">在table标签中嵌套完整的table标签</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E7%9B%B8%E5%85%B3%E5%B1%9E%E6%80%A7"><span class="nav-number">1.3.6.</span> <span class="nav-text">6、相关属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#scope%E5%B1%9E%E6%80%A7%EF%BC%9A%E5%8F%AF%E4%BB%A5%E6%B7%BB%E5%8A%A0%E5%9C%A8th%E5%85%83%E7%B4%A0%E4%B8%AD%EF%BC%8C%E7%94%A8%E6%9D%A5%E5%B8%AE%E5%8A%A9%E7%90%86%E8%A7%A3%E6%A0%87%E9%A2%98%E5%8D%95%E5%85%83%E6%A0%BC%E6%98%AF%E8%A1%8C%E6%A0%87%E9%A2%98%E8%BF%98%E6%98%AF%E5%88%97%E6%A0%87%E9%A2%98%EF%BC%8C%E5%8F%AF%E9%80%89%E5%80%BCcolgroup%E3%80%81rowgroup"><span class="nav-number">1.3.6.1.</span> <span class="nav-text">scope属性：可以添加在th元素中，用来帮助理解标题单元格是行标题还是列标题，可选值colgroup、rowgroup</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#id%E5%92%8C%E6%A0%87%E9%A2%98%E5%B1%9E%E6%80%A7%EF%BC%9A%E7%94%A8id%E5%92%8Cheaders%E5%B1%9E%E6%80%A7%E5%88%9B%E9%80%A0%E6%A0%87%E9%A2%98%E5%92%8C%E5%8D%95%E5%85%83%E6%A0%BC%E4%B9%8B%E9%97%B4%E7%9A%84%E8%81%94%E7%B3%BB%E3%80%82%E5%8F%AF%E4%BB%A5%E4%B8%BAtd%E5%85%83%E7%B4%A0%E6%B7%BB%E5%8A%A0headers%E5%B1%9E%E6%80%A7%EF%BC%8C%E4%B8%BAth%E5%85%83%E7%B4%A0%E6%B7%BB%E5%8A%A0id%E5%B1%9E%E6%80%A7"><span class="nav-number">1.3.6.2.</span> <span class="nav-text">id和标题属性：用id和headers属性创造标题和单元格之间的联系。可以为td元素添加headers属性，为th元素添加id属性</span></a></li></ol></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="杨从伍"
+      src="/images/header.jpg">
+  <p class="site-author-name" itemprop="name">杨从伍</p>
+  <div class="site-description" itemprop="description">新手上路，请多关照</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ycwdsg" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ycwdsg" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨从伍</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">9k</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+ 
+<script type="text/javascript"
+color="150,100,205" opacity='0.5' zIndex="-2" count="80" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+</html>
+<script type="text/javascript" src="/js/clicklove.js"></script>
